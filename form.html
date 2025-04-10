@@ -1,10 +1,10 @@
-<select id="billingDropdown"></select>
+<select id="rotationList"></select>
 
 <script>
   // Load from localStorage
   const savedCodes = JSON.parse(localStorage.getItem("rotationSites")) || [];
 
-  const dropdown = document.getElementById("billingDropdown");
+  const dropdown = document.getElementById("rotationList");
 
   savedCodes.forEach(code => {
     const option = document.createElement("option");
