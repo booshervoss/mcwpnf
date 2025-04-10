@@ -1,0 +1,15 @@
+<select id="billingDropdown"></select>
+
+<script>
+  // Load from localStorage
+  const savedCodes = JSON.parse(localStorage.getItem("billingCodes")) || [];
+
+  const dropdown = document.getElementById("billingDropdown");
+
+  savedCodes.forEach(code => {
+    const option = document.createElement("option");
+    option.value = code;
+    option.textContent = code;
+    dropdown.appendChild(option);
+  });
+</script>
