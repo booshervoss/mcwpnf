@@ -4,7 +4,7 @@
   // Load from localStorage
   const savedCodes = JSON.parse(localStorage.getItem("rotationSites")) || [];
 
-  const dropdown = document.getElementById("rotationList");
+  const dropdown = document.getElementById("rotationSites");
 
   savedCodes.forEach(code => {
     const option = document.createElement("option");
